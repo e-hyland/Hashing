@@ -1,0 +1,55 @@
+The program now prints the number of words and percentage of total words in each 10% of the hash table so that you can see if there is an area of the hash table that is overcrowded. I've also calculated the number of collisions per word (the number of times you have to probe backwards to find an empty space).
+
+I have also explored two other hash functions (titled hashscnd[1] and hashthird[2]) beyond hash_all with the double hashing technique. 
+I tested these functions by looking up the words in 34words.txt in the eowl_shuffle.txt file (results below). Both prove better than the hash_all function with regards to average number of lookups.
+
+Hash_all - Average lookup: 2.57
+Collisions per word = 1.023390
+Distribution:
+0-10% = 20462, Percentage of total = 15.89
+10-20% = 20247, Percentage of total = 15.72
+20-30% = 20097, Percentage of total = 15.61
+30-40% = 19933, Percentage of total = 15.48
+40-50% = 19422, Percentage of total = 15.08
+50-60% = 5107, Percentage of total = 3.97
+60-70% = 5149, Percentage of total = 4.00
+70-80% = 4862, Percentage of total = 3.78
+80-90% = 5208, Percentage of total = 4.04
+90-100% = 8286, Percentage of total = 6.43
+
+
+Hashscnd - Average lookup: 2.04
+Collisions per word = 1.024687
+Distribution:
+0-10% = 20667, Percentage of total = 16.05
+10-20% = 20258, Percentage of total = 15.73
+20-30% = 20068, Percentage of total = 15.58
+30-40% = 19792, Percentage of total = 15.37
+40-50% = 19377, Percentage of total = 15.05
+50-60% = 5153, Percentage of total = 4.00
+60-70% = 5190, Percentage of total = 4.03
+70-80% = 5038, Percentage of total = 3.91
+80-90% = 5176, Percentage of total = 4.02
+90-100% = 8054, Percentage of total = 6.25
+
+
+Hashthird - Average lookup: 2.18
+Collisions per word = 0.980827
+Distribution:
+0-10% = 20281, Percentage of total = 15.75
+10-20% = 20321, Percentage of total = 15.78
+20-30% = 20175, Percentage of total = 15.67
+30-40% = 20021, Percentage of total = 15.55
+40-50% = 19196, Percentage of total = 14.91
+50-60% = 5076, Percentage of total = 3.94
+60-70% = 5084, Percentage of total = 3.95
+70-80% = 5203, Percentage of total = 4.04
+80-90% = 5044, Percentage of total = 3.92
+90-100% = 8372, Percentage of total = 6.50
+
+
+References:
+
+[1]"Simple hash functions," in Stack Overflow, 2013. [Online]. Available: http://stackoverflow.com/questions/14409466/simple-hash-functions. Accessed: Dec. 10, 2016.
+
+[2]"Good hash function for strings," in Stack Overflow, 2014. [Online]. Available: http://stackoverflow.com/questions/2624192/good-hash-function-for-strings. Accessed: Dec. 10, 2016.
